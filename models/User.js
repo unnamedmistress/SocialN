@@ -1,16 +1,16 @@
-c// Import the required modules and functions from Mongoose
+// Import the required modules and functions from Mongoose
 const { Schema, model } = require("mongoose");
 
 // Define the schema for the User model
 const UserSchema = new Schema(
-{
-// Define the username property of the User model
-username: {
-type: String,
-unique: true,
-trim: true,
-required: "You must create a User name first.",
-},
+  {
+    // Define the username property of the User model
+    username: {
+      type: String,
+      unique: true,
+      trim: true,
+      required: "You must create a User name first.",
+    },
 
     email: {
       type: String,

@@ -7,14 +7,13 @@ const {
   deleteThought,
   addReaction,
   removeReaction,
-} = require("../../controllers/thought-controller");
+} = require("../../controllers/thought-controller.js");
 
 // Create a new router object
 const router = require("express").Router();
 
 // Define endpoints for the thoughts API
 
-// /api/thoughts
 // Handle GET and POST requests for getting all thoughts and creating a new thought
 router.route("/").get(getAllThought).post(createThought);
 
